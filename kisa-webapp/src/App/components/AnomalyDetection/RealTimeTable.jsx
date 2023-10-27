@@ -6,7 +6,7 @@ export const RealTimeTable = (props) => {
     return(
     <div className={`flex flex-row w-full h-ful overflow-hi mb-4 rounded-2xl ${ColorThema.Secondary4}`}>
         <div className="flex flex-col h-[250px] w-[20%] p-3 ">
-            <span className="text-white rounded-md ml-3 mb-5 font-bold text-medium">• 드론 상태 진단 현황</span>
+            <span className="text-white rounded-md ml-3 mb-5 font-bold text-medium">• 드론 진단 현황</span>
             <RealTimeStateTable WarningData={props.WarningData}/>
         </div>
         <div className="flex flex-col h-full w-[80%] py-3 pr-3 ">
