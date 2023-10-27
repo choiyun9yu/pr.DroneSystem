@@ -6,7 +6,7 @@ export const LeftPanel = () => {
 
 
     return (
-        <div className={`flex-col w-[40%] h-full mr-5`}>
+        <div className={`flex-col w-[43%] h-full mr-5`}>
 
             <div className={`flex flex-row w-full h-[24%]`}>
                 <div className={`w-[50%] mr-2.5 rounded-2xl ${ColorThema.Secondary4}`}>
@@ -53,8 +53,8 @@ export const LeftPanel = () => {
                 <div className={`w-full h-full rounded-2xl ${ColorThema.Secondary4}`}>
                     <div className="w-full h-full ml-4">
                         <div className={`flex flex-row items-center pt-3 pl-2`}>
-                            <span>• 장애진단 현황</span>
-                            <div className={`flex flex-row pl-40`}>
+                            <span>• 진단 현황</span>
+                            <div className={`flex flex-row pl-20`}>
                                 <div className={`flex h-full p-2 items-center`}><div className={`flex w-3 h-3 mr-1 rounded-full bg-[#6359e9]`}></div><span>Drone01</span></div>
                                 <div className={`flex h-full p-2 items-center`}><div className={`flex w-3 h-3 mr-1 rounded-full bg-[#64cff6]`}></div><span>Drone02</span></div>
                                 <div className={`flex h-full p-2 items-center`}><div className={`flex w-3 h-3 mr-1 rounded-full bg-[#8fe388]`}></div><span>Drone03</span></div>

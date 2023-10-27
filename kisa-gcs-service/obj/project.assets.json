@@ -3537,24 +3537,25 @@
     ]
   },
   "packageFolders": {
-    "/home/choiyungyu/.nuget/packages/": {}
+    "/Users/yun9yuchoi/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/choiyungyu/mygit/pr.DroneGCS/kisa-gcs-service/kisa-gcs-service.csproj",
+      "projectUniqueName": "/Users/yun9yuchoi/Documents/mygit/pr.DroneGCS/kisa-gcs-service/kisa-gcs-service.csproj",
       "projectName": "kisa-gcs-service",
-      "projectPath": "/home/choiyungyu/mygit/pr.DroneGCS/kisa-gcs-service/kisa-gcs-service.csproj",
-      "packagesPath": "/home/choiyungyu/.nuget/packages/",
-      "outputPath": "/home/choiyungyu/mygit/pr.DroneGCS/kisa-gcs-service/obj/",
+      "projectPath": "/Users/yun9yuchoi/Documents/mygit/pr.DroneGCS/kisa-gcs-service/kisa-gcs-service.csproj",
+      "packagesPath": "/Users/yun9yuchoi/.nuget/packages/",
+      "outputPath": "/Users/yun9yuchoi/Documents/mygit/pr.DroneGCS/kisa-gcs-service/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/choiyungyu/.nuget/NuGet/NuGet.Config"
+        "/Users/yun9yuchoi/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "/usr/local/share/dotnet/sdk/7.0.308/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -3625,7 +3626,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.113/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.308/RuntimeIdentifierGraph.json"
       }
     }
   }

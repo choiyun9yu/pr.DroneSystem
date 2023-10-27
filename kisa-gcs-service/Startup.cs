@@ -21,7 +21,7 @@ namespace kisa_gcs_service
                 options.AddPolicy("CorsPolicy", builder =>
                 {
                     // 허용할 오리진을 설정 (프론트엔드의 주소)
-                    builder.WithOrigins("http://localhost:3000", "http://localhost:3001", "http://localhost:3002", "http://localhost:5000", "http://localhost:5050")
+                    builder.WithOrigins("http://localhost:3000", "http://localhost:3001", "http://localhost:3002", "http://localhost:5000", "http://localhost:5050",  "http://192.168.3.26:3000")
                         .AllowAnyMethod()    // 모든 HTTP 메서드 허용
                         .AllowAnyHeader()    // 모든 헤더 허용
                         .AllowCredentials(); // 모든 인증 정보 허용 
