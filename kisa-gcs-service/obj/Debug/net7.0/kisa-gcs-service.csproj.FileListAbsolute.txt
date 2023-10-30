@@ -91,11 +91,4 @@
 /home/choiyungyu/mygit/pr.DroneGCS/kisa-gcs-service/obj/Debug/net7.0/kisa-gcs-service.genruntimeconfig.cache
 /home/choiyungyu/mygit/pr.DroneGCS/kisa-gcs-service/obj/Debug/net7.0/ref/kisa-gcs-service.dll
 /home/choiyungyu/mygit/pr.DroneGCS/kisa-gcs-service/bin/Debug/net7.0/System.Net.WebSockets.WebSocketProtocol.dll
-/home/choiyungyu/mygit/pr.DroneGCS/kisa-gcs-service/bin/Debug/net7.0/Google.Protobuf.dll
-/home/choiyungyu/mygit/pr.DroneGCS/kisa-gcs-service/bin/Debug/net7.0/Grpc.AspNetCore.Server.dll
-/home/choiyungyu/mygit/pr.DroneGCS/kisa-gcs-service/bin/Debug/net7.0/Grpc.AspNetCore.Server.ClientFactory.dll
-/home/choiyungyu/mygit/pr.DroneGCS/kisa-gcs-service/bin/Debug/net7.0/Grpc.Core.Api.dll
-/home/choiyungyu/mygit/pr.DroneGCS/kisa-gcs-service/bin/Debug/net7.0/Grpc.Net.Client.dll
-/home/choiyungyu/mygit/pr.DroneGCS/kisa-gcs-service/bin/Debug/net7.0/Grpc.Net.ClientFactory.dll
-/home/choiyungyu/mygit/pr.DroneGCS/kisa-gcs-service/bin/Debug/net7.0/Grpc.Net.Common.dll
 /home/choiyungyu/mygit/pr.DroneGCS/kisa-gcs-service/bin/Debug/net7.0/data/gcs_drone.Drone.json

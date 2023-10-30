@@ -17,23 +17,6 @@ public class DroneController : ControllerBase    // C#에서 콜른(:)은 다른
         _droneService = droneService; // DroneService 주입
     }
 
-    [HttpGet("test")]
-    public IActionResult Get()
-    {
-        try
-        {
-            List<Drone> drones = _droneService.Get(); // DroneService를 사용하여 데이터 가져오기
-
-            if (drones.Count == 0) { return NotFound(); }
-            return Ok(drones);
-        }
-        catch (Exception e)
-        {
-            Console.WriteLine(e);
-            return StatusCode(500, "Internal Server Error");
-        }
-    }
-
     [HttpGet("drones")]
     public IActionResult GetDrones()    // 동기 메서드, 메서드가 실행되면 결과를 즉시 반환
     {
