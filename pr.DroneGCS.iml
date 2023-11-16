@@ -3,7 +3,11 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$" />
+<<<<<<<< HEAD:pr.DroneGCS.iml
     <orderEntry type="jdk" jdkName="Python 3.11 (venv)" jdkType="Python SDK" />
+========
+    <orderEntry type="jdk" jdkName="Pipenv (pr.DroneGCS)" jdkType="Python SDK" />
+>>>>>>>> origin/macos:.idea/pr.DroneGCS.iml
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
