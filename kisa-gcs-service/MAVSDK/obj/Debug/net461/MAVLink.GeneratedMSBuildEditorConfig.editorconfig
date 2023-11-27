@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = MAVLink
+build_property.ProjectDir = /home/choiyungyu/mygit/pr.DroneGCS/kisa-gcs-service/MAVSDK/

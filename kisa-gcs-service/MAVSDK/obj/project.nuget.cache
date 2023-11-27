@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "rzLfu9mmPXmqNmDh7i6PMFRvm0jAztTtOhxWWBoTFC0W/Foeky8nGV1OmhVeETdz5t0xOmSCcxDjHnzxHpYI6Q==",
+  "success": true,
+  "projectFilePath": "/home/choiyungyu/mygit/pr.DroneGCS/kisa-gcs-service/MAVSDK/MAVLink.csproj",
+  "expectedPackageFiles": [
+    "/home/choiyungyu/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/home/choiyungyu/.nuget/packages/microsoft.netframework.referenceassemblies/1.0.0/microsoft.netframework.referenceassemblies.1.0.0.nupkg.sha512",
+    "/home/choiyungyu/.nuget/packages/microsoft.netframework.referenceassemblies.net461/1.0.0/microsoft.netframework.referenceassemblies.net461.1.0.0.nupkg.sha512",
+    "/home/choiyungyu/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512",
+    "/home/choiyungyu/.nuget/packages/newtonsoft.json/13.0.2/newtonsoft.json.13.0.2.nupkg.sha512",
+    "/home/choiyungyu/.nuget/packages/system.runtime.compilerservices.unsafe/4.7.0/system.runtime.compilerservices.unsafe.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}
