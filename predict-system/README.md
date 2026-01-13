@@ -4,7 +4,9 @@
 
     % cd predict-sytem
 
-    % poetry shell
+    % poetry install
+    
+    % poetry env activate
 
     % python run.py
 
