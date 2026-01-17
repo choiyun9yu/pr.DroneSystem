@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "o6iR+TGh7jZNWi3kMPDW+x3a8RI3b9e1/PsvoLtsxVY=",
+  "Source": "gcs-system",
+  "BasePath": "_content/gcs-system",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

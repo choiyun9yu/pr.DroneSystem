@@ -34,8 +34,8 @@ export const Main = () => {
                     <Route element={<AppDeIdentification />}>
                         <Route path="img" element={<VideoProcessing />} />
                     </Route>
+                    <Route path={"introduce"} element={<ProjectDocuments />} />
                     {/*<Route path={"chat"} element={<ChatRProvider><Chat/></ChatRProvider>} />*/}
-                    {/*<Route path={"docs"} element={<ProjectDocuments />} />*/}
                 </Route>
             </Routes>
         </BrowserRouter>

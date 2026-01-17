@@ -19,6 +19,7 @@ public class GcsApiService
         var connectionString = configuration.GetConnectionString("MongoDB");
         var mongoClient = new MongoClient(connectionString);
         var database = mongoClient.GetDatabase("drone");
+
         _localPoint = database.GetCollection<LocalPointAPI>("local_point");
         _missionLoad = database.GetCollection<MissionLoadAPI>("mission_load");
         _vincentyCalculator = new VincentyCalculator();

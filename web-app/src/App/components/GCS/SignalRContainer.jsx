@@ -107,6 +107,9 @@ export const SignalRProvider = ({ children }) => {
     const handleMissionStart = () => {
         connection.current.invoke('HandleDroneMissionStart')
     }
+    const handleAlertToChatbotAsync = () => {
+        connection.current.invoke('HandleAlertToChatbotAsync')
+    }
     const handleDroneJoystick = arrow => {
         connection.current.invoke('HandleDroneJoystick', arrow)
     }
@@ -145,6 +148,7 @@ export const SignalRProvider = ({ children }) => {
             handleDroneMissionDownload,
             handleDroneMissionClear,
             handleMissionStart,
+            handleAlertToChatbotAsync,
             handleSelectedDrone,
             handleMoveBtn,
         }}>

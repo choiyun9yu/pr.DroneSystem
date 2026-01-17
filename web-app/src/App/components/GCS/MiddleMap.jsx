@@ -173,7 +173,7 @@ export const MiddleMap = (props) => {
                         >
                             <div
                                 style={{
-                                    width: '50px',
+                                    width: '42px',
                                     height: '68px',
                                     backgroundImage: `url(${process.env.PUBLIC_URL}/Drone.png)`,
                                     backgroundSize: 'contain',
@@ -274,7 +274,7 @@ export const MiniMap = (props) => {
                 >
                     <div
                         style={{
-                            width: '50px',
+                            width: '42px',
                             height: '68px',
                             backgroundImage: `url(${process.env.PUBLIC_URL}/Drone.png)`,
                             backgroundSize: 'contain',
@@ -372,6 +372,13 @@ export const FlightInfoTable = () => {
                         <td className={'px-2'}>{
                             (droneMessage && (droneMessage.DroneStt.Speed).toFixed(3) <= 0.025 ? '0.000' : droneMessage && (droneMessage.DroneStt.Speed).toFixed(3))
                         } m/s
+                        </td>
+                    </tr>
+                    <tr>
+                        <th className={'px-2'}>드론 고도</th>
+                        <td className={'px-2'}>{
+                            (droneMessage && (droneMessage.DroneStt.Alt).toFixed(3))
+                        } m
                         </td>
                     </tr>
                     {/*<tr>*/}

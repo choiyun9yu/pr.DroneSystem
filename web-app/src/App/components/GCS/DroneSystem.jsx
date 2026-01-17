@@ -36,8 +36,8 @@ export const DroneSystem = () => {
     )
 
     const [center, setCenter] = useState({
-        lat: 37.5239891,
-        lng: 126.9192837
+        lat: 35.40992942351967,
+        lng: 126.4198020766582
     })
 
     const [targetPoints, setTargetPoints] = useState([]) // {id:1, position:{lat:0, lng:0}}

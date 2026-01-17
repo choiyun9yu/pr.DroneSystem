@@ -17,7 +17,8 @@ public interface IDroneManager
     Task HandleControlJoystick(ArrowButton arrow);
     Task HandleMoveBtn(double lat, double lng);
     Task HandleDroneMoveToBase();
-    
+    Task HandleAlertToChatbotAsync();
+    void AutoFlightFunc();
     void HandleDroneStartMarking(double lat, double lng);
     void HandleDroneTargetMarking(double lat, double lng);
     void HandleMissionAlt(short missionalt);

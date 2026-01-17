@@ -71,7 +71,7 @@ const RightSideBottom = (props) => {
   return (
     <div className={'flex items-start w-full h-full rounded-2xl bg-[#1D1D41]'}>
       <div className="flex flex-col w-full h-full m-2">
-        <span className="text-white rounded-md m-3 font-bold text-medium">• 드론 운용</span>
+        <span className="text-white rounded-md m-3 font-bold text-medium">• 드론 카메라</span>
         <div className={'w-full min-h-[250px] mx-auto bg-black'}>
           {props.swapMap && <MiniMap
             center={props.center}

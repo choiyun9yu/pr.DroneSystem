@@ -1,3 +1,4 @@
+using gcs_system.Interfaces;
 using gcs_system.Services;
 using gcs_system.Services.Helper;
 using Grpc.Net.Client;
@@ -21,28 +22,46 @@ public class Startup
 
     public void ConfigureServices(IServiceCollection services)
     {
-        // GrpcChannel DI 컨테이너에 등록 
+        // gRPC
         var grpcClient = GrpcChannel.ForAddress("http://localhost:50051");
         services.AddSingleton(grpcClient);
-        
+
+        // MVC
         services.AddControllers();
+
+        // App Services
         services.AddScoped<AnomalyDetectionApiService>();
         services.AddScoped<GcsApiService>();
         services.AddScoped<DashboardApiService>();
-        services.AddCors(options => 
+
+        // ⭐⭐⭐ Dify 등록 (여기로 옮겨야 함)
+        services.AddHttpClient<IDifyClient, DifyClient>();
+
+        // SignalR
+        services.AddSignalR()
+            .AddNewtonsoftJsonProtocol(); // ← 이건 SignalR 설정만
+
+        // Others
+        services.AddSingleton<MavlinkUdpNetty>();
+        services.AddSingleton<ArduCopterManager>();
+
+        services.AddCors(options =>
         {
             options.AddPolicy("CorsPolicy", builder =>
             {
-                builder.WithOrigins("http://localhost:3000", "http://www.yunlab.kr:3000", "http://125.183.175.200:3000")
-                    .AllowAnyMethod()   
-                    .AllowAnyHeader()   
+                builder.WithOrigins(
+                        "http://localhost:3000",
+                        "http://127.0.0.1:3000",
+                        "http://www.yunlab.kr:3000",
+                        "http://125.183.175.200:3000"
+                    )
+                    .AllowAnyMethod()
+                    .AllowAnyHeader()
                     .AllowCredentials();
             });
         });
-        services.AddSingleton<MavlinkUdpNetty>();
-        services.AddSingleton<ArduCopterManager>();
-        services.AddSignalR();
     }
+
 
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
     {  
@@ -71,6 +90,7 @@ public class Startup
     
     public static TBuilder AddNewtonsoftJsonProtocol<TBuilder>(TBuilder builder, Action<NewtonsoftJsonHubProtocolOptions> configure) where TBuilder : ISignalRBuilder
     {
+        builder.Services.AddHttpClient<IDifyClient, DifyClient>();
         builder.Services.TryAddEnumerable(ServiceDescriptor.Singleton<IHubProtocol, NewtonsoftJsonHubProtocol>());
         builder.Services.Configure(configure);
         return builder;

@@ -272,6 +272,21 @@ public class ApiController : ControllerBase
         }
     }
 
+    [HttpPost("AutoFlight")]
+    public void AutoFlight()
+    {
+        IFormCollection form = Request.Form;
+        try
+        {
+            _arduCopterManager.AutoFlightFunc();
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            StatusCode(500, "Post AutoFlight Error!");
+        }
+    }
+
     [HttpPost("realtime")]
     public IActionResult PostRealTime()
     {

@@ -65,9 +65,9 @@ export const Menu = () => {
                             <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                         </svg>
                     </button>
-                    <motion.div animate={controlTitleText} className='mr-3 overflow-hidden'>
+                    <motion.div animate={controlTitleText} className='mt-3 mr-3 overflow-hidden'>
                         {isOpen
-                            ? <span className="ml-3 font-bold text-3xl text-white">Logo</span>
+                            ? <span className="ml-3 font-bold text-3xl text-white">한전KPS(주)</span>
                             : null}
                     </motion.div>
                     <motion.ul>

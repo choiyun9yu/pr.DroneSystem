@@ -41,16 +41,20 @@ public class ArduCopterManager : Hub<IDroneManager>
 
     private VincentyCalculator _vincentyCalculator = new();
     
+    private readonly IDifyClient _difyClient;
+    
     private static readonly int THROTTLE_INCREMENT = 100;
     private static readonly int YAW_INCREMENT = 30;
     
-    public ArduCopterManager(IConfiguration configuration, IHubContext<ArduCopterManager> hubContext, GcsApiService gcsApiService, GrpcChannel grpcChannel)
+    public ArduCopterManager(IConfiguration configuration, IHubContext<ArduCopterManager> hubContext, GcsApiService gcsApiService, GrpcChannel grpcChannel, IDifyClient difyClient)
     {
         _hubContext = hubContext ?? throw new ArgumentNullException(nameof(hubContext));
 
         _grpcUpdateService = new DroneStatusUpdate.DroneStatusUpdateClient(grpcChannel);
         
         _gcsApiService = gcsApiService;
+        
+        _difyClient = difyClient;
         
         var connectionString = configuration.GetConnectionString("MongoDB");
         var mongoClient = new MongoClient(connectionString);
@@ -859,7 +863,30 @@ public class ArduCopterManager : Hub<IDroneManager>
         }
         throw new InvalidOperationException("_droneAddress is null.");
     }
+
     
+    // 한전KPS 개별 과제용 함수
+    public async void AutoFlightFunc()
+    {
+        Console.WriteLine("Start Auto FLight Schedule!");
+    }
+
+    // public async Task HandleAlertToChatbotAsync()
+    // {
+    //     Console.WriteLine("Alert To Chatbot!");
+    //
+    //     await _difyClient.SendEventAsync(
+    //         "한빛 송전탑(2) 이상 상태 감지",
+    //         new
+    //         {
+    //             status = "EMERGENCY",
+    //             source = "OT Anomaly Detection AI System",
+    //             time = DateTime.UtcNow
+    //         }
+    //     );
+    // }
+    
+
     public async Task DisconnectAsync()
     {
         if (_context == null) return;
