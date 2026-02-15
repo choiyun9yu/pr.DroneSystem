@@ -21,7 +21,7 @@ export const Main = () => {
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/auth/login" element={<LoginPage />} />
+                {/*<Route path="/auth/login" element={<LoginPage />} />*/}
                 <Route path="/auth/register" element={<RegisterPage />} />
                 <Route element={<SignalRProvider><AppWrapper /></SignalRProvider>}>
                     <Route path="dashboard" element={<AppDashboard />} />
@@ -35,6 +35,7 @@ export const Main = () => {
                         <Route path="img" element={<VideoProcessing />} />
                     </Route>
                     <Route path={"introduce"} element={<ProjectDocuments />} />
+                    <Route path="/auth/login" element={<LoginPage />} />
                     {/*<Route path={"chat"} element={<ChatRProvider><Chat/></ChatRProvider>} />*/}
                 </Route>
             </Routes>

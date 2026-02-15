@@ -125,7 +125,7 @@ export const VideoProcessing = () => {
 
             setTimeout(() => {
                 setShowWarning(true);
-            }, 3000);
+            }, 7000);
         };
 
         const handleFirstClose = () => {
@@ -147,27 +147,27 @@ export const VideoProcessing = () => {
                 <div>
                     {pageNum === 1 &&
                         <div>
-                            <div className='mt-20 ml-24 text-white text-9xl font-bold'>생성형 AI를 메신저와 연계</div>
+                            <div className='mt-24 ml-24 text-white text-9xl font-bold'>생성형 AI를 메신저와 연계</div>
                             <div className='mt-10 ml-32'>
                                 <div className='flex flex-col'>
                                     <div className={`${ColorThema.Secondary3} hover:${ColorThema.Primary1}`}>
                                         <div
                                             onClick={handleLimitsNum1}
                                             className='flex text-white font-bold text-4xl m-3 pl-2'>
-                                            [문제점] 챗봇이 존재하지만 낮은 활용도
+                                            ⚠️ 문제점 - 챗봇은 존재하지만 낮은 활용도
                                         </div>
                                     </div>
                                     {
                                         limitsNum1 === 1 &&
-                                        <div className={'ml-12 text-3xl text-white'}>
-                                            <div className={`my-3 text-white text-3xl`}>
-                                                - 사내 규정, 업무 절차, 전산 시스템 사용법 문의 등 특정 담당자 또는 선배에게 의존
+                                        <div className={'ml-12 text-2xl text-white'}>
+                                            <div className={`my-3 text-white text-2xl`}>
+                                                ▸ 사내 규정, 업무 절차, 전산 시스템 사용법 문의 시 <span className={'font-bold underline'}>특정 담당자 또는 선배에게 의존</span>
                                             </div>
-                                            <div className={`mb-3 text-white text-3xl`}>
-                                                - 반복적인 질문으로 업무 집중도 저하, 근무 시간·연차·퇴근 여부에 따라 응답 지연
+                                            <div className={`mb-3 text-white text-2xl`}>
+                                                ▸ 반복적인 질문으로 <span className={'font-bold underline'}>업무 집중도 저하</span>, 근무 시간·연차·퇴근 여부에 따라 <span className={'font-bold underline'}>응답 지연 발생</span>
                                             </div>
-                                            <div className={`mb-3 text-white text-3xl`}>
-                                                - 신입 직원 입장에선 질문 자체가 부담, 간부 입장에선 부하 직원 부재 시 업무 추진 곤란
+                                            <div className={`mb-8 text-white text-2xl`}>
+                                                ▸ 신입 직원 입장에서는 질문 자체가 부담이며, 간부 입장에서는 부하 직원 부재 시 업무 추진이 곤란함
                                             </div>
                                         </div>
                                     }
@@ -176,23 +176,23 @@ export const VideoProcessing = () => {
                                         <div
                                             onClick={handleLimitsNum2}
                                             className='flex text-white font-bold text-4xl m-3 pl-2'>
-                                            [제안사항] 메신저 연계형 생성형 AI로 사용자 접근성과 친밀도 향상
+                                            💡 제안사항 - 메신저 연계형 생성형 AI 도입
                                         </div>
                                     </div>
                                     {
                                         limitsNum2 === 1 &&
                                         <div className={'ml-12 text-3xl text-white'}>
-                                            <div className={`my-3 text-white text-3xl`}>
-                                                - 부하 직원에게 지시하거나 친한 선배 또는 동기에게 물어보듯 질문 가능
+                                            <div className={`my-3 text-white text-2xl`}>
+                                                ▸ 부하 직원에게 지시하거나, 친한 선배 또는 동기에게 물어보듯 자연스럽게 질문 가능
                                             </div>
-                                            <div className={`mb-3 text-white text-3xl`}>
-                                                - RAG 기법을 사용하여 할루시네이션을 없애고 근거가 되는 문서 하이퍼링크 가능
+                                            <div className={`mb-3 text-white text-2xl`}>
+                                                ▸ <span className={'font-bold underline'}>RAG 기법</span>을 활용하여 할루시네이션을 최소화하고, 근거 문서에 대한 <span className={'font-bold underline'}>하이퍼링크 기능 제공</span>
                                             </div>
-                                            <div className={`mb-3 text-white text-3xl`}>
-                                                - 사내 규정뿐만 아니라 SAP 메뉴얼도 학습시켜 활용 가능
+                                            <div className={`mb-3 text-white text-2xl`}>
+                                                ▸ 사내 규정뿐만 아니라 SAP 매뉴얼까지 학습시켜 폭넓게 활용 가능
                                             </div>
-                                            <div className={`mb-6 text-white text-3xl`}>
-                                                - 업무망 데이터베이스와 연동하여 잔여 연차일 수 조회 같은 비서 역할 수행 가능
+                                            <div className={`mb-8 text-white text-2xl`}>
+                                                ▸ <span className={'font-bold underline'}>업무망 데이터베이스와 연동</span>하여 잔여 연차 일수 조회 등  AI비서 기능 수행 가능
                                             </div>
                                         </div>
                                     }
@@ -201,15 +201,15 @@ export const VideoProcessing = () => {
                                         <div
                                             onClick={handleLimitsNum3}
                                             className='flex text-white font-bold text-4xl m-3 pl-2'>
-                                            [시나리오]
+                                            📈 기대효과 - “기술을 배워서 쓰는 것”이 아닌 “쓰다 보면 활용하게 되는 구조”
                                         </div>
                                     </div>
                                     {
                                         limitsNum3 === 1 &&
-                                        <div className={'ml-12 text-3xl text-white'}>
-                                            <div className='my-3'>1. 사내 규정 중 법인카드 사용 제한에 대한 문의</div>
-                                            <div className='mb-3'>2. SAP 사용 방법 중 T-Code에 대한 문의</div>
-                                            <div className='mb-3'>3. 연차 활용 방법과 잔여 연차일 수 문의</div>
+                                        <div className={'ml-12 text-2xl text-white'}>
+                                            <div className='my-3'>▸ 신입 직원의 질문 부담 감소 및 반복 문의 감소로 <span className={'font-bold underline'}>업무 효율성 향상</span>
+                                            </div>
+                                            <div className='mb-3'>▸ 지식 전달의 표준화와 사내 정보 접근성 및 친밀도 향상</div>
                                             <button
                                                 onClick={handlePageUp}
                                                 className={`flex items-center justify-center mt-7 mr-20 mx-auto h-[50px] w-[120px] rounded-md text-white ${ColorThema.Secondary3} hover:${ColorThema.Primary1}`}>
@@ -224,24 +224,24 @@ export const VideoProcessing = () => {
 
                     {pageNum === 2 &&
                         <div>
-                            <div className='mt-20 ml-24 text-white text-9xl font-bold'>AI 드론 에이전트</div>
+                            <div className='mt-24 ml-24 text-white text-9xl font-bold'>AI 드론·RPA 설비 점검</div>
                             <div className='mt-10 ml-32'>
                                 <div className='flex flex-col'>
                                     <div className={`${ColorThema.Secondary3} hover:${ColorThema.Primary1}`}>
                                         <div
                                             onClick={handleLimitsNum1}
                                             className='flex text-white font-bold text-4xl m-3 pl-2'>
-                                            [문제점] 기존 드론활용 설비 점검의 한계
+                                            ⚠️ 문제점 - 기존 드론 활용 설비 점검의 한계
                                         </div>
                                     </div>
                                     {
                                         limitsNum1 === 2 &&
                                         <div className={'ml-12 text-3xl text-white'}>
-                                            <div className={`my-3 text-white text-3xl`}>
-                                                - 송전설비-발전설비 점검 시 작업자가 직접 현장 근처에 접근해야 함
+                                            <div className={`my-3 text-white text-2xl`}>
+                                                ▸ 송전 설비·발전 설비 점검 시 작업자가 <span className={'font-bold underline'}>직접 현장 인근에 접근</span>해야 함
                                             </div>
-                                            <div className={`mb-3 text-white text-3xl`}>
-                                                - 긴급 상황 발생 시 이상을 인지하고 보고서 작성까지 많은 시간 소요
+                                            <div className={`mb-8 text-white text-2xl`}>
+                                                ▸ 긴급 상황 발생 시 이상을 인지한 후 <span className={'font-bold underline'}>보고서 작성까지 많은 시간이 소요</span>됨
                                             </div>
                                         </div>
                                     }
@@ -250,23 +250,23 @@ export const VideoProcessing = () => {
                                         <div
                                             onClick={handleLimitsNum2}
                                             className='flex text-white font-bold text-4xl m-3 pl-2'>
-                                            [제안사항] AI 드론 에이전트가 송전 설비 이상탐지 및 점검 자동화
+                                            💡 제안사항 - 클라우드 서비스로 드론 설비 점검 RPA 제공
                                         </div>
                                     </div>
                                     {
                                         limitsNum2 === 2 &&
                                         <div className={'ml-12 text-3xl text-white'}>
-                                            <div className={`my-3 text-white text-3xl`}>
-                                                - AI가 설비를 모니터링하며 이상 징후 먼저 탐지하고 알림
+                                            <div className={`my-3 text-white text-2xl`}>
+                                                ▸ AI가 설비를 <span className={'font-bold underline'}>상시 모니터링</span>하며 이상 징후를 선제적으로 탐지하고 알림 제공
                                             </div>
-                                            <div className={`mb-3 text-white text-3xl`}>
-                                                - AI 에이전트가 자동으로 드론비행승인을 신청하고 정찰
+                                            <div className={`mb-3 text-white text-2xl`}>
+                                                ▸ AI 에이전트가 <span className={'font-bold underline'}>자동으로 드론 비행 승인을 신청</span>하고 정찰 수행
                                             </div>
-                                            <div className={`mb-3 text-white text-3xl`}>
-                                                - 드론이 정찰 데이터를 기반으로 자동으로 보고서 초안 작성
+                                            <div className={`mb-3 text-white text-2xl`}>
+                                                ▸ 드론이 수집한 <span className={'font-bold underline'}>정찰 데이터를 기반으로 보고서 초안을 자동 생성</span>
                                             </div>
-                                            <div className={`mb-6 text-white text-3xl`}>
-                                                - 점검 > 보고 > 의사결정까지 하나의 흐름으로 자동화
+                                            <div className={`mb-8 text-white text-2xl`}>
+                                                ▸ <span className={'font-bold underline'}>탐지 → 점검 → 보고</span>까지 하나의 흐름으로 통합 자동화
                                             </div>
                                         </div>
                                     }
@@ -275,15 +275,14 @@ export const VideoProcessing = () => {
                                         <div
                                             onClick={handleDroneAlet}
                                             className='flex text-white font-bold text-4xl m-3 pl-2'>
-                                            [시나리오]
+                                            📈 기대효과 - 안전·비용·의사결정 속도를 동시에 개선
                                         </div>
                                     </div>
                                     {
                                         limitsNum3 === 2 &&
-                                        <div className={'ml-12 text-3xl text-white'}>
-                                            <div className='my-3'>1. 한빛 송전탑(2)에 이상 상황 발생</div>
-                                            <div className='mb-3'>2. AI 에이전트가 이상탐지하고 자동으로 정찰 수행</div>
-                                            <div className='mb-3'>3. 정찰 내용을 바탕으로 보고서 초안 작성 및 보고</div>
+                                        <div className={'ml-12 text-2xl text-white'}>
+                                            <div className='my-3'>▸ 작업자 안전성 향상 및 점검 시간·비용 절감</div>
+                                            <div className='mb-3'>▸ 점검 자동화를 통한 점검 품질의 표준화</div>
                                         </div>
                                     }
                                 </div>
@@ -356,11 +355,11 @@ export const VideoProcessing = () => {
 
                         <div className="flex flex-col items-center text-center">
                             <span className="font-bold text-red-600">WARNING</span>
-                            <span className="mt-2 text-sm font-medium">
+                            <span className="mt-2 text-xl font-medium">
                             한빛 송전탑(2)에서 이상 징후가 탐지되었습니다.
                         </span>
-                            <span className="mt-2 text-sm font-medium opacity-90">
-                            AI 에이전트가 드론 비행 승인을 자동 신청했습니다.
+                            <span className="mt-2 text-xl font-medium opacity-90">
+                            RPA가 드론 비행 승인을 자동 신청했습니다.
                         </span>
                         </div>
                     </div>
@@ -412,10 +411,10 @@ export const VideoProcessing = () => {
 
                         <div className="flex flex-col items-center text-center">
                             <span className="font-bold text-yellow-400">Notification</span>
-                            <span className="mt-2 text-sm font-medium">
+                            <span className="mt-2 text-xl font-medium">
                             드론 비행을 승인 받았습니다.
                         </span>
-                            <span className="mt-2 text-sm font-medium opacity-90">
+                            <span className="mt-2 text-xl font-medium opacity-90">
                             한빛 송전탑(2)으로 자동 정찰을 시작합니다.
                         </span>
                         </div>

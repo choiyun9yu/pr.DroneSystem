@@ -52,30 +52,41 @@ export const Menu = () => {
         <>
             <motion.div animate={controls} className={`flex flex-col justify-between rounded-r-3xl shadow-xl shadow-black ${ColorThema.Secondary4}`}>
                 <div className="flex flex-col mt-5 ml-5">
-                    <button onClick={isOpen ? showLess : showMore}
-                            className={`flex items-center w-[48px] h-[40px] rounded-md mt-5 text-white bg-[#333353] hover:${ColorThema.Primary1}`}>
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            strokeWidth="2.5"
-                            stroke="currentColor"
-                            className="w-6 h-6 mx-auto"
-                        >
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                        </svg>
-                    </button>
-                    <motion.div animate={controlTitleText} className='mt-3 mr-3 overflow-hidden'>
+                    <div className={'flex flex-row'}>
+                        <button onClick={isOpen ? showLess : showMore}
+                                className={`flex items-center w-[48px] h-[40px] rounded-md mt-5 text-white bg-[#333353] hover:${ColorThema.Primary1}`}>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                strokeWidth="2.5"
+                                stroke="currentColor"
+                                className="w-6 h-6 mx-auto"
+                            >
+                                <path strokeLinecap="round" strokeLinejoin="round"
+                                      d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <motion.div animate={controlTitleText} className='mt-4 mr-3 overflow-hidden'>
                         {isOpen
-                            ? <span className="ml-3 font-bold text-3xl text-white">한전KPS(주)</span>
+                            ? <div className={'flex flex-row items-center'}>
+                                <img
+                                    src="/kps.png"   // public 폴더 기준
+                                    alt="소개 이미지"
+                                    className="w-[46px] h-[30px] object-cover"
+                                /> <span className="ml-3 font-bold text-3xl text-white">한전KPS</span>
+                            </div>
                             : null}
                     </motion.div>
                     <motion.ul>
                         {MenuIcon.mainMenu.map((item, index) => (
-                            <li className={`flex items-center mr-3 h-[40px] rounded-md mt-7 text-white bg-[#333353] hover:${ColorThema.Primary1}`} key={index}>
+                            <li className={`flex items-center mr-3 h-[40px] rounded-md mt-7 text-white bg-[#333353] hover:${ColorThema.Primary1}`}
+                                key={index}>
                                 <a href={item.link} className="mx-3">{item.icon}</a>
                                 <motion.a animate={controlText} href={item.link} className="text-sm">
-                                    {isOpen
+                                {isOpen
                                         ? <span className="text-sm"> {item.name}</span>
                                         : null}
                                 </motion.a>
@@ -84,7 +95,7 @@ export const Menu = () => {
                     </motion.ul>
                 </div>
 
-                <div className="p-5"><hr/></div>
+                <div className="p-5 mt-10"><hr/></div>
 
                 <div className="flex flex-col mt-5 ml-5 mb-40">
                     <ul>

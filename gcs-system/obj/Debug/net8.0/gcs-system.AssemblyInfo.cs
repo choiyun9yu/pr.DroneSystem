@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("gcs-system")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aec65548384a63305c37a994a683726c0e72f6c6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+468203ad4e386bc90a9480ca00d1dbd964daedb7")]
 [assembly: System.Reflection.AssemblyProductAttribute("gcs-system")]
 [assembly: System.Reflection.AssemblyTitleAttribute("gcs-system")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
